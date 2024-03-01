@@ -19,6 +19,7 @@ The API documentation is available at [http://localhost:8000/swagger](http://loc
 
 - There're [react-toastify](https://www.npmjs.com/package/react-toastify) and [material-ui](https://mui.com/material-ui/getting-started/) libraries added to the project. You're not obligated to use these, but I really recommend to.
 - Current frontend code is written in JavaScript, but you can use TypeScript.
+- The ads API returns descriptions of ads as html. You don't have to worry about displaying it as html, just render it as a string (so it's totally fine if the ad description of the ad-details component looks like this `Cars rental<br><a href="https://google.com">Link</a>`)
 
 
 ## Goals:
@@ -30,7 +31,7 @@ The API documentation is available at [http://localhost:8000/swagger](http://loc
 4. [http://localhost:8000](http://localhost:8000) and [http://localhost:8000/ads](http://localhost:8000/ads) should return AdsList component
 5. AdDetails should be available at [http://localhost:8000/ads/:id](http://localhost:8000/ads/:id)
 6. `nx lint frontend` should not return eny erorrs.
-7. Once the app is ready, submit a PR to the main branch of **this** repository.
+7. Once the app is ready, submit a PR to the main branch of **YOUR** repository and message to your contact from our team.
 
 
 ### AdsList component
@@ -75,7 +76,7 @@ Layout of the component looks like this
 The component has 40px paddings from every side. The layout:
 
 ```
-[carousel with the ad images]
+[centered carousel with the ad images, height is 30% of the screen]
 all free screen height
 [full title][all available space, but not less than 20px][Like button]
 [city], [district] [all available space, but not less than 20px][price]

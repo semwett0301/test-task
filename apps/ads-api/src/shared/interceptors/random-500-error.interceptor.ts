@@ -10,7 +10,7 @@ import { tap } from 'rxjs/operators'
 
 @Injectable()
 export class Random500ErrorInterceptor implements NestInterceptor {
-  private responsesWithoutError: number = 0
+  private responsesWithoutError = 0
 
   intercept = (context: ExecutionContext, next: CallHandler) => {
     return next.handle().pipe(
